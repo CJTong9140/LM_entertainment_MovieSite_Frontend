@@ -28,7 +28,11 @@ and suggestions.
 - Explore the source code on [GitHub](https://github.com/CJTong9140/LM_entertainment_MovieSite_Frontend.git)
 
 ## Watch the Demo
-https://github.com/user-attachments/assets/7db92443-f83e-4b9d-b1a1-3a9a7a26defa
+Can be accessed under media/screen_recording.mp4.     
+
+https://github.com/user-attachments/assets/db6013e3-1b4f-4c1d-b6e3-2e38dc29b8e6
+
+
 
 ## How to Run Locally 
 1. Clone the repository: git clone GITHUB_PROJECT_URL 
