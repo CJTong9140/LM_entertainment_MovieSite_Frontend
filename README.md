@@ -1,6 +1,6 @@
 # LM Entertainment Movie Site (Front End)
-LM Entertainment is a front-end movie website showcasing various web development skills. This project demonstrates
-my ability to create functional and visually appealing designs with input validation and structured navigation.
+LM Entertainment is a front-end movie web application designed to showcase various web development skills through a dynamic and user-friendly movie website. 
+This project demonstratesmy ability to create functional and visually appealing designs with input validation and structured navigation.
 
 ## Why I Build This Project
 This project was an opportunity to refine my front-end development skills, focusing on website structure, form validation,
@@ -15,12 +15,18 @@ and deployment. It serves as a foundation for building more complex application
   - Has modal open close property set for "Home Alone" and "Apostle"
 - **Custom Movie Pages**: Dedicated pages for Apostle and Home Alone, contain extra information about the movies, trailers,
   and suggestions.
-- **Responsive Design**: Adapted for various screen sizes.
+- **Responsive Design**: Optimized for various screen sizes to ensure a seamless user experience across devices.
 
 ## Technologies Used
 - **Languages**: HTML, CSS, JavaScript
 - **Hosting**: [Netlify](https://www.netlify.com/)
 - **Tools** [GitHub](https://github.com/) for version control and project management
+
+## Usage
+- **Homepage**: Access the homepage to navigate through various sections.
+- **Registration/Login**: Create an account or log in to access personalized features.
+- **Contact Us**: Use the contact form to send messages or inquiries.
+- **Movie Pages**: Explore detailed information and trailers for selected movies.
 
 ## Demo
 - [Live Website for Home Page](https://lm-entertainment.netlify.app/)
@@ -52,10 +58,14 @@ https://github.com/user-attachments/assets/11f4689a-eee2-4bd4-9802-a8b0e17817d4
 - **Dynamic Movie Content**
   - Use JavaScript to dynamically generate movie pages
   - Integrate an API like TMDb for real-time movie data
-- **Enhanced Design**
+- **Database Connectivity**
+  - Connect to a database to store user information and movie data
+- **Enhanced Design and UI/UX**
   - Add hover effects, animations, automatic trailers, and improved responsiveness for a better user experience
 - **Advanced Form Handling**
   - Include CAPTCHA for added form security
   - Display real-time error messages without page reloads
 - **Full Stack Conversion**
   - Develop a backend with Node.js/Express.js, and a database like MongoDB and MySQL
+- **Additional Movie Pages**:
+  - Expand the library to include more movies with detailed information.
