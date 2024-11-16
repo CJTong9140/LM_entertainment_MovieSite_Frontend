@@ -1,0 +1,594 @@
+<!--
+    Name:               CJ Jingren Tong
+    Student Number:     152464194
+    Date:               December 12th, 2020
+    Website Reference: 
+        https://www.disneyplus.com/en-ca
+        https://www.netflix.com/ca/
+    Netlify registered webpage name: https://lm-entertainment.netlify.app/index.html
+    Clickable page: Apostle and Home Alone
+    Page: Now Playing Page
+-->
+
+<!--
+    We are only able to access the now playing/home page only if the user sign up for 
+    an account. It is able to access just by pressing log in or register button
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LM Entertainment | Now Playing</title>
+    <script src="https://kit.fontawesome.com/82cf55ecdb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header id="player-screen-header" class="home-header">
+        <div class="grid container">
+            <h1>
+                <a class="logo" href="../index.html"><span>LM</span> Entertainment</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="current-page" href="home.html">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <!--Link to all TV-shows-->
+                    <li>
+                        <a href="navigation/tvShows.html">
+                            <i class="fas fa-tv"></i> TV Shows
+                        </a>
+                    </li> 
+                    <!--Link to all Movies-->
+                    <li>
+                        <a href="navigation/movies.html">
+                            <i class="fas fa-film"></i> Movies
+                        </a>
+                    </li>
+                    <!-- Link to all new Movies/Shows-->
+                    <li>
+                        <a href="navigation/latest.html">
+                            <i class="fas fa-star"></i> New &amp; Popular
+                        </a>
+                    </li>
+                    <!-- Link to all Shows/Movies you added-->
+                    <li>
+                        <a href="navigation/myList.html">
+                            <i class="fas fa-plus"></i> My List
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <!--<ul>
+                    <li>
+                        <form method="GET" action="">
+                            <input type="text" placeholder="Search for Title or Genre..." id="search">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropdown-button"><i class="fas fa-user"></i> <i class="fas fa-sort-down"></i></button>
+                        <ul class="dropdown-content">
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="#">App Settings</a></li>
+                            <li><a href="#">Manage Account</a></li>
+                            <li><a href="footer/help.html">Help</a></li>
+                        </ul>
+                    </li>
+                </ul>-->
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero-section" class="container">
+            <div class="silder-container">
+                <div class="slide">
+                    <h2>Lion King</h2>
+                    <a href="">
+                        <img src="../img/lion-king-slide.jpg" alt="A poster for the movie Lion King">
+                    </a>
+                    <div class="arrows-container">
+                        <button class="previous" type="button"><i class="fas fa-angle-left"></i></button>
+                        <button class="next" type="button"><i class="fas fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="types-section" class="container">
+            <h2>Start Watching with <span class="logo"><span>LM</span> Entertainment</span></h2>
+            <div class="grid grid-col-6">
+                <!--Link to all action movies-->
+                <div class="secondary-button">
+                    <a href="genrePage/action.html">Action</a>
+                </div>
+                <!--Link to all animation movies-->
+                <div class="primary-button">
+                    <a href="genrePage/animation.html">Animation</a>
+                </div>
+                <!--Link to all comedy movies-->
+                <div class="secondary-button">
+                    <a href="genrePage/comedy.html">Comedy</a>
+                </div>
+                <!--Link to all crime movies-->
+                <div class="primary-button">
+                    <a href="genrePage/crime.html">Crime</a>
+                </div>
+                <!--Link to all documentary movies-->
+                <div class="secondary-button">
+                    <a href="genrePage/docu.html">Documentary</a>
+                </div>
+                <!--Link to all horror movies-->
+                <div class="primary-button">
+                    <a href="genrePage/horror.html">Horror</a>
+                </div>
+                <!--Link to all drama movies-->
+                <div class="secondary-button">
+                    <a href="genrePage/drama.html">Drama</a>
+                </div>
+                <!--Link to all family movies-->
+                <div class="primary-button">
+                    <a href="genrePage/family.html">Family</a>
+                </div>
+                <!--Link to all thriller movies-->
+                <div class="secondary-button">
+                    <a href="genrePage/thriller.html">Thriller</a>
+                </div>
+                <!--Link to all romance movies-->
+                <div class="primary-button">
+                    <a href="genrePage/romance.html">Romance</a>
+                </div>
+                <!--Link to all sci-fi movies-->
+                <div class="secondary-button">
+                    <a href="genrePage/scifi.html">Sci-Fi</a>
+                </div>
+                <!--Link to all other movies-->
+                <div class="primary-button">
+                    <a href="genrePage/other.html">Others</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="recommend-section" class="secondary-bg-color">
+            <div class="container">
+                <h2>Recommended For You</h2>
+                <div class="grid grid-col-6">
+                    <div>
+                        <a class="apostle" href="#">
+                            <img src="../img/apostle.jpg" alt="Poster for movie Apostle">
+                        </a>
+                        <h3>Apostle</h3>
+                        <p>
+                            2018 | 2hr 10min | TV-MA
+                            <br>
+                            Drama, Fantasy, Horror
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../img/black-mirror.jpg" alt="Poster for show Black Mirror">
+                        <h3>Black Mirror</h3>
+                        <p>
+                            2011- | 22 episodes | TV-MA
+                            <br>
+                            Drama, Sci-Fi, Thriller
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../img/toy-story.jpg" alt="Poster for the movie Toy Story">
+                        <h3>Toy Story</h3>
+                        <p>
+                            1995 | 1hr 21min | G
+                            <br>
+                            Animation, Adventure, Comedy
+                        </p>
+                    </div>
+                    <div>
+                        <a href="links/haunting-of-hill-house.html">
+                            <img src="../img/haunting-of-hill-house.jpg" alt="Poster for show The Haunting of Hill House">
+                        </a>
+                        <h4>The Haunting of Hill House</h4>
+                        <p>
+                            2018 | 10 episodes | TV-MA
+                            <br>
+                            Drama, Mystery, Horror
+                        </p>
+                    </div>
+                    <div>
+                        <a href="links/my-octopus-teacher.html">
+                            <img src="../img/my-octopus-teacher.jpg" alt="Poster for the movie My Octopus Teacher ">
+                        </a>
+                        <h3>My Octopus Teacher</h3>
+                        <p>
+                            2020 | 1hr 25min | G
+                            <br>
+                            Documentary
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../img/you.jpg" alt="Poster for the show You">
+                        <h3>You</h3>
+                        <p>
+                            2018- | Season 3 Premiere in 2021 | TV-MA
+                            <br>
+                            Crime, Drama, Romance
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="continue-section" class="container">
+            <h2>Continue Watching</h2>
+            <div class="grid grid-col-6">
+                <div>
+                    <a href="links/infinity-war.html">
+                        <img src="../img/infinity-war.jpg" alt="Poster for movie Avengers: Infinity War">
+                    </a>
+                    <h3>Avengers: Infinity War</h3>
+                    <p>
+                        2018 | 2hr 29min | PG-13
+                        <br>
+                        Action, Adventure, Sci-Fi
+                    </p>
+                </div>
+                <div>
+                    <img src="../img/office.jpg" alt="Poster for show The Office">
+                    <h3>Black Mirror</h3>
+                    <p>
+                        2011- | 22 episodes | TV-MA
+                        <br>
+                        Drama, Sci-Fi, Thriller
+                    </p>
+                </div>
+                <div>
+                    <img src="../img/pulp-fiction.jpg" alt="Poster for the movie Pulp Fiction">
+                    <h3>Pulp Fiction</h3>
+                    <p>
+                        1994 | 2hr 34min | R
+                        <br>
+                        Crime, Drama
+                    </p>
+                </div>
+                <div>
+                    <a href="links/gone-with-the-wind.html">
+                        <img src="../img/gone-with-the-wind.jpg" alt="Poster for the movie Gone with the Wind">
+                    </a>
+                    <h3>Gone with the Wind</h3>
+                    <p>
+                        1939 | 3hr 58min | Passed
+                        <br>
+                        Drama, History, Romance
+                    </p>
+                </div>
+                <div>
+                    <a href="links/money-heist.html">
+                        <img src="../img/money-heist.jpg" alt="Poster for the show Money Heist">
+                    </a>
+                    <h3>Money Heist</h3>
+                    <p>
+                        2017- | 32 episodes | TV-MA
+                        <br>
+                        Action, Crime, Mystery
+                    </p>
+                </div>
+                <div>
+                    <a class="home-alone" href="#">
+                        <img src="../img/home-alone-poster.jpg" alt="Poster for the movie Home Alone">
+                    </a>
+                    <h3>Home Alone</h3>
+                    <p>
+                        1990 | 1hr 43min | PG
+                        <br>
+                        Comedy, Family
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="because-section" class="secondary-bg-color">
+            <div class="container">
+                <h2>Because you watched The Haunting of Hill House</h2>
+                <div class="grid grid-col-6">
+                    <div>
+                        <a href="links/stranger-things.html">
+                            <img src="../img/stranger-things.jpg" alt="Poster for show Stranger Things">
+                        </a>
+                        <h3>Stranger Things</h3>
+                        <p>
+                            2016- | Season 4 Premiere in 2021 | TV-14
+                            <br>
+                            Drame, Fantasy, Horror
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../img/marianne.jpg" alt="Poster for show Marianne">
+                        <h3>Marianne</h3>
+                        <p>
+                            2019 | 8 episodes | TV-MA
+                            <br>
+                            Drama, Horror
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../img/the-mist.jpg" alt="Poster for the show The Mist">
+                        <h3>The Mist</h3>
+                        <p>
+                            2017 | 10 episodes | TV-14
+                            <br>
+                            Drama, Horror, Sci-Fi
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="holiday-section" class="container">
+                <h2>Holiday Movies</h2>
+                <div class="grid grid-col-6">
+                    <div>
+                        <a class="home-alone" href="#">
+                            <img src="../img/home-alone-poster.jpg" alt="Poster for movie Home Alone">
+                        </a>
+                        <h3>Home Alone</h3>
+                        <p>
+                            1990 | 1hr 43min | PG
+                            <br>
+                            Comedy, Family
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../img/santa-buddies.jpg" alt="Poster for the movie Santa Buddies">
+                        <h3>Santa Buddies</h3>
+                        <p>
+                            2009 | 1hr 28min | G
+                            <br>
+                            Adventure, Family, Fantasy
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../img/the-grinch.jpg" alt="Poster for the movie How the Grinch Stole Christmas">
+                        <h5>How the Grinch Stole Christmas</h5>
+                        <p>
+                            2000 | 1hr 44min | PG
+                            <br>
+                            Comedy, Family, Fantasy
+                        </p>
+                    </div>
+                    <div>
+                        <a href="links/edward-scissorhand.html">
+                            <img src="../img/edward-scissorhands.jpg" alt="Poster for the movie Edward Scissorhands">
+                        </a>
+                        <h4>Edward Scissorhands</h4>
+                        <p>
+                            1990 | 1hr 45min | PG-13
+                            <br>
+                            Drama, Fantasy, Romance
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="footer/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="footer/help.html">Help</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p>
+            <span class="logo"><span>LM</span> Entertainment</span> | Life is a Movie &copy; 2020, All Rights Reserved
+        </p>
+    </footer>
+
+    <div class="modalApostle modal hide">
+        <div id="apostle-modal-container">
+            <div>
+                <div class="cancel-button cancel-apostle">
+                    <i class="far fa-window-close"></i>
+                </div>
+                <div id="apostle-section" class="movie-first-section">
+                    <div class="container">
+                        <h2 class="font-size">Apostle</h2>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-play"></i> Play </i></a></li>
+                            <li><button><i class="fas fa-download"></i> Download</button></li>
+                            <li><button><i class="fas fa-plus-circle"></i> Add to your list</button></li>
+                        </ul>
+                    </div>      
+                </div>
+    
+                <div class="container grid grid-col-2 movie-second-section">
+                    <div>
+                        <p>
+                            2018 | TV-MA | 2h 10m
+                        </p>
+                        <p>
+                            In 1905, a drifter on a dangerous mission to rescue his kidnapped sister tangles with a 
+                            sinister religious cult on an isolated island
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <span>Direcctor:</span> Gareth Evans
+                        </p>
+                        <p>
+                            <span>Cast:</span> Dan Stevens, Lucy Boynton, Michael Sheen, Mark Lewis Jones,
+                            Bill Milner, Kristine Froseth, Paul Higgins, Richard Elfyn, Elen Rhys, Ross O'Hennessy
+                        </p>
+                        <p>
+                            <span>Genres:</span> Brirish Movies, Horror Movies
+                        </p>
+                        <p>
+                            <span>This movie is:</span> Scary, Suspenseful, Dark
+                        </p>
+                    </div>
+                </div>
+                    
+                <div class="trailer-section secondary-bg-color">
+                    <div class="container">
+                        <h2>Trailers &amp; More</h2>
+                        <div class="grid grid-col-3">
+                            <div>
+                                <iframe src="https://www.youtube.com/embed/J1JdWOqc9Q8?rel=0&controls=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <h3>Apostle | Trailer 1</h3>
+                            </div>
+                            <div>
+                                <iframe src="https://www.youtube.com/embed/IC0zgfJAVhA?rel=0&controls=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <h3>Apostle | Trailer 2</h3>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+    
+                <div class="movie-third-section container">
+                    <h2>More Like This</h2>
+                    <div class="grid grid-col-4">
+                        <div>
+                            <a href="marianne.html">
+                                <img src="../img/marianne.jpg" alt="poster for Marianne">
+                            </a>
+                            <h3>Marianne</h3>
+                            <p>
+                                2019 | 8 episodes | TV-MA
+                                <br>
+                                Drama, Horror
+                            </p>
+                        </div>
+                        <div>
+                            <a href="haunting-of-hill-house.html">
+                                <img src="../img/haunting-of-hill-house.jpg" alt="Poster for show The Haunting of Hill House">
+                            </a>
+                            <h3>The Haunting of Hill House</h3>
+                            <p>
+                                2018 | 10 episodes | TV-MA
+                                <br>
+                                Drama, Mystery, Horror
+                            </p>
+                        </div>
+                        <div>
+                            <img src="../img/the-mist.jpg" alt="Poster for the show The Mist">
+                            <h3>The Mist</h3>
+                            <p>
+                                2017 | 10 episodes | TV-14
+                                <br>
+                                Drama, Horror, Sci-Fi
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modalHome modal hide">
+        <div id="home-alone-modal-container">
+            <div>
+                <div class="cancel-button cancel-home">
+                    <i class="far fa-window-close"></i>
+                </div>
+                <div id="home-alone-section" class="movie-first-section">
+                    <div class="container">
+                        <h2 class="font-size">HOME <i class="fas fa-home"></i> ALONe</h2>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-play"></i> Play </i></a></li>
+                            <li><button><i class="fas fa-download"></i> Download</button></li>
+                            <li><button><i class="fas fa-plus-circle"></i> Add to your list</button></li>
+                        </ul>
+                    </div>      
+                </div>
+    
+                <div class="container grid grid-col-2 movie-second-section">
+                    <div>
+                        <p>
+                            1990 | PG | 1h 43m
+                        </p>
+                        <p>
+                            Eight-year-old Kevin McCallister has become the man of the house, overnight! Accidentally left behind 
+                            when his family rushes off on a Christmas vacation, Kevin gets busy decorating the house for the holidays.
+                            But he's not decking the halls with tinsel and holly. Two bumbing burglars are trying to break in, and Kevin's
+                            rigging a bewildering battery of booby traps to welcome them!
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <span>Direcctor:</span> Chris Columbus
+                        </p>
+                        <p>
+                            <span>Cast:</span> Macaulay Culkin, Joe Pesci, Daniel Stern, John Heard, Roberts Blossom, Catherine O'Hara
+                        </p>
+                        <p>
+                            <span>Genres:</span> Family, Comedy
+                        </p>
+                        <p>
+                            <span>This movie is:</span> Funny, Festive
+                        </p>
+                    </div>
+                </div>
+                    
+                <div class="trailer-section secondary-bg-color">
+                    <div class="container">
+                        <h2>Trailers &amp; More</h2>
+                        <div class="grid grid-col-3">
+                            <div>
+                                <iframe src="https://www.youtube.com/embed/IsOlj-xpK9Q?rel=0&controls=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <h3>Home Alone 25th Anniversary Trailer</h3>
+                            </div>
+                            <div>
+                                <iframe src="https://www.youtube.com/embed/1iZBw5Qybuo?rel=0&controls=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <h3>Home Alone | Trailer</h3>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+    
+                <div class="movie-third-section container">
+                    <h2>More Like This</h2>
+                    <div class="grid grid-col-4">
+                        <div>
+                            <a href="edward-scissorhand.html">
+                                <img src="../img/edward-scissorhands.jpg" alt="poster for Edward Scissorhand">
+                            </a>
+                            <h3>Edward Scissorhands</h3>
+                            <p>
+                                1990 | 1hr 45min | PG-13
+                                <br>
+                                Drama, Fantasy, Romance
+                            </p>
+                        </div>
+                        <div>
+                            <img src="../img/santa-buddies.jpg" alt="Poster for the movie Santa Buddies">
+                            <h3>Santa Buddies</h3>
+                            <p>
+                                2009 | 1hr 28min | G
+                                <br>
+                                Adventure, Family, Fantasy
+                            </p>
+                        </div>
+                        <div>
+                            <img src="../img/the-grinch.jpg" alt="Poster for the movie The Grinch">
+                            <h4>How the Grinch Stole Christmas</h4>
+                            <p>
+                                2000 | 1hr 44min | PG
+                                <br>
+                                Comedy, Family, Fantasy
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <script src="../js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!--
+    Name:               CJ Jingren Tong
+    Student Number:     152464194
+    Date:               December 12th, 2020
+    Website Reference:
+        https://www.disneyplus.com/en-ca
+        https://www.netflix.com/ca/
+    Netlify registered webpage name: http://lmentertainment.netlify.app
+    Page: Contact Page HTML 
+    Task: Part 1.2 Contact Email Form Validation and Submission
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LM Entertainment | Contact Us</title>
+    <script src="https://kit.fontawesome.com/82cf55ecdb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container grid">
+            <h1>
+                <a class="logo" href="../index.html"><span>LM</span> Entertainment</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="register.html">REGISTER NOW</a></li>
+                    <li><a href="login.html">LOG IN</a></li>
+                    <li><a class="current-page" href="contact.html">CONTACT US</a></li>
+                </ul>      
+            </nav>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/cj_christiana.scarlett.evans/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a> 
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/jingren.tong/" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+            </ul>  
+            <!--<form method="GET" action="">
+                <input type="text" placeholder="Search..." id="search">
+                <button type="button"><i class="fas fa-search"></i></button>
+            </form>-->
+        </div>         
+    </header>
+    <main>
+        <section id="contact-form">
+            <div class="container">
+                <div>
+                    <h2>Get in Touch</h2>
+                    <p>We're looking forward to supporting you. Please fill out the quick form and we will get back to you. </p>
+                </div>
+                
+                <form id="contactForm" action="https://httpbin.org/post" method="POST">
+                    <div class="form-section">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="form-section">
+                        <label for="email">Email Address</label>
+                        <input id="email" name="_replyto" type="text">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="form-section">
+                        <label for="address">Address</label>
+                        <input id="address" name="address" type="text" placeholder="e.g. Street Address followed by Street Name">
+                        <div class="error"></div>
+                    </div>
+                    
+                    <div class="form-section" id="dropdown-section">
+                        <label for="city">City</label>
+                        <input list="cities" id="city" name="city">
+
+                        <datalist id="cities">
+                            <option value="Toronto"></option>
+                            <option value="Vancouver"></option>
+                            <option value="Montreal"></option>
+                            <option value="Ottawa"></option>
+                            <option value="Calgary"></option>
+                            <option value="Quebec"></option>
+                            <option value="Edmonton"></option>
+                            <option value="Winnipeg"></option>
+                            <option value="Victoria"></option>
+                            <option value="St. John's"></option>
+                            <option value="Barrie"></option>
+                            <option value="Hamilton"></option>
+                            <option value="London"></option>
+                            <option value="Niagara Falls"></option>
+                            <option value="Kingston"></option>
+                            <option value="Mississauga"></option>
+                            <option value="Kitchener"></option>
+                            <option value="Oshawa"></option>
+                            <option value="Banff"></option>
+                            <option value="Guelph"></option>
+                            <option value="Markham"></option>
+                            <option value="Whitehorse"></option>
+                            <option value="Waterloo"></option>
+                            <option value="Brampton"></option>
+                            <option value="Thunder Bay"></option>
+                            <option value="Surrey"></option>
+                            <option value="Cambridge"></option>
+                            <option value="Vaughan"></option>
+                            <option value="Oakville"></option>
+                            <option value="Burlington"></option>
+                        </datalist>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="form-section">
+                        <label for="postalcode">Postal Code</label>
+                        <input id="postalcode" name="postalcode" type="text" placeholder="e.g. A1AB2B or A1A B2B">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="form-section">
+                        <label for="concern">What is your concern today?</label>
+                        <div id="concern-section">
+                            <input id="question" value="question" name="concern" type="radio">
+                            <label for="question">Question</label>
+
+                            <input id="comment" value="comment" name="concern" type="radio">
+                            <label for="comment">Comment</label>
+
+                            <input id="order" value="order" name="concern" type="radio">
+                            <label for="order">Order Problem</label>
+
+                            <input id="other" value="other" name="concern" type="radio">
+                            <label for="other">Other</label>
+                        </div>
+                        <div class="error"></div>
+
+                        <div id="orderNumber-section" class= "hide">
+                            <label for="orderNum">Order Number: </label>
+                            <input id="orderNum" name="orderNumber" type="text" placeholder="9 digit order number e.g. 3XB10Wz3T">
+                            <div id="orderNumber-error"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <label for="message">Message:</label>
+                        <textarea placeholder="Please discribe your issue" id="message" rows="10"></textarea>
+                        <div class="error"></div>
+                    </div>
+                    <div>
+                        <input type="hidden" id="devName" name="devName" value="CJ Jingren Tong">
+                    </div>
+
+                    <div class="form-section">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="footer-email-form">
+        <div class="container grid grid-col-2">
+            <nav>
+                <ul>
+                    <li><a href="html/footer/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="html/footer/help.html">Help</a></li>
+                    <li><a href="html/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div>
+                <p>Don't miss any new movies or shows by subscribing to our newsletter</p>
+                <iframe name="hiddenFrame" style="display: none;"></iframe>
+                <form action="https://formspree.io/f/xbjpzogy" method="POST" target="hiddenFrame">
+                    <label for="email" ></label>
+                    <input type="text" placeholder="Email Address" id="email" name="_replyto">
+                    <button id="subcription-button" data-g-dismiss="modal" type="submit">SUBSCRIBE</button>
+                    <div class="error"></div>
+                </form>
+            </div> 
+        </div>
+        <p>
+            <span class="logo"><span>LM</span> Entertainment</span> | Life is a Movie &copy; 2020, All Rights Reserved
+        </p>
+    </footer>
+
+    <div class="modal hide">
+        <div class="modal-container">
+            
+        </div>
+    </div>
+    <script src="../js/contact.js"></script>
+</body>
+</html>
