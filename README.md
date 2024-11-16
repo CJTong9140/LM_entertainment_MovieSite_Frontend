@@ -29,7 +29,9 @@ and deployment. It serves as a foundation for building more complex application
 
 ## Watch the Demo
 Can be accessed under media/screen_recording.mp4.
-https://github.com/user-attachments/assets/db6013e3-1b4f-4c1d-b6e3-2e38dc29b8e6
+
+https://github.com/user-attachments/assets/11f4689a-eee2-4bd4-9802-a8b0e17817d4
+
 
 ## ScreenShots
 ### *Main Page*
