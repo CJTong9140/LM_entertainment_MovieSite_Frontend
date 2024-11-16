@@ -23,11 +23,12 @@ and suggestions.
 - **Tools** [GitHub](https://github.com/) for version control and project management 
 
 ## Demo 
-- [Live Website for Home Page](https://www.netflix.com/ca/)
-- [Live Website for Movie Main Page]()
-- Explore the source code on [GitHub]()
+- [Live Website for Home Page](https://lm-entertainment.netlify.app/)
+- [Live Website for Movie Main Page](https://lm-entertainment.netlify.app/html/home)
+- Explore the source code on [GitHub](https://github.com/CJTong9140/LM_entertainment_MovieSite_Frontend.git)
 
-## Screenshots
+## Watch the Demo
+https://github.com/user-attachments/assets/7db92443-f83e-4b9d-b1a1-3a9a7a26defa
 
 ## How to Run Locally 
 1. Clone the repository: git clone GITHUB_PROJECT_URL 
